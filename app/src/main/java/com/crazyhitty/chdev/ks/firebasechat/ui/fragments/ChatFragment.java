@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -43,6 +44,7 @@ public class ChatFragment extends Fragment implements ChatContract.View, TextVie
     private ChatRecyclerAdapter mChatRecyclerAdapter;
 
     private ChatPresenter mChatPresenter;
+    private ImageButton mSenderButton;
 
     public static ChatFragment newInstance(String receiver,
                                            String receiverUid,
@@ -79,6 +81,13 @@ public class ChatFragment extends Fragment implements ChatContract.View, TextVie
     private void bindViews(View view) {
         mRecyclerViewChat = (RecyclerView) view.findViewById(R.id.recycler_view_chat);
         mETxtMessage = (EditText) view.findViewById(R.id.edit_text_message);
+        mSenderButton = (ImageButton) view.findViewById(R.id.imageButton);
+        //CRIANDO BOTAO DE ENVIO E INICIANDO ACAO AO CLICAR
+        mSenderButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                sendMessage();
+            }
+        });
     }
 
     @Override

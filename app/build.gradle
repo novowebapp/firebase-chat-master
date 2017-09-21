@@ -39,6 +39,9 @@ dependencies {
 
     // event bus
     compile 'org.greenrobot:eventbus:3.0.0'
+    //navigation drawer
+    compile 'com.mindorks:placeholderview:0.2.7'
+
 }
 
 

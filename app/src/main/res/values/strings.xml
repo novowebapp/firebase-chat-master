@@ -21,4 +21,8 @@
     <string name="logout">Logout</string>
     <string name="are_you_sure">Voce tem certeza?</string>
     <string name="cancel">Cancelar</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>

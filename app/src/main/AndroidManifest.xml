@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.crazyhitty.chdev.ks.firebasechat">
 
+
+
     <application
         android:name=".FirebaseChatMainApp"
         android:allowBackup="true"
