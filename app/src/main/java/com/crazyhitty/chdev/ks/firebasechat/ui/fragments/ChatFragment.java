@@ -86,6 +86,7 @@ public class ChatFragment extends Fragment implements ChatContract.View, TextVie
         mSenderButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 sendMessage();
+                
             }
         });
     }
